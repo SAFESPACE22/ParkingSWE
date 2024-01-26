@@ -1,0 +1,156 @@
+
+/* --------------------------------------------------------------------- ALL PAGES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: white; }
+::-webkit-scrollbar-thumb:hover { background: gray; }
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+  url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  border-bottom: 2px solid white;
+}
+
+.header .title {
+  margin-bottom: 10px;
+}
+
+.header .title h1 {
+  font-size: 40px;
+}
+
+.header .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .nav a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.1s;
+  border-bottom: 2px solid transparent;
+}
+
+.header .nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.content {
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 0;
+  overflow-y: auto;
+}
+
+/* --------------------------------------------------------------------- RATE PAGE */
+
+.card {
+  padding: 10px 15px;
+  width: 420px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: white;
+  box-shadow: 5px 5px 15px #000;
+  backdrop-filter: blur(20px);
+}
+
+.card .name-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.card .user-ratings {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.card .image {
+  text-align: center;
+}
+
+.card .image img {
+  width: 100%;
+}
+
+.card .rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .rate span {
+  font-size: 35px;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.card .rate span:hover {
+  padding-top: 0;
+}
+
+.card .rate span:active {
+  padding-top: 5px;
+}
+
+/* --------------------------------------------------------------------- POST PAGE */
+
+form {
+  box-shadow: 5px 5px 15px #000;
+  backdrop-filter: blur(20px);
+  padding: 25px 50px;
+  text-align: center;
+}
+
+form input {
+  font-size: 25px;
+  padding: 5px 10px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.1s;
+  width: 100%;
+  margin-top: 50px;
+}
+
+form input:hover {
+  border: 1px solid gray;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+form input:nth-child(5) {
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+}
