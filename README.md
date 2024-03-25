@@ -1,10 +1,10 @@
-# Welcome to -----!
+# Welcome to Park Findr!
 
 
 ## Features
 
 ## Meet the Team
----- is a collaborative project by seven software engineers and database administrators. We are passionate about technology, and we hope to share our passion with you through this project. If you have any questions, please feel free to reach out to us on LinkedIn.
+Park Findr is a collaborative project by seven software engineers and database administrators. We are passionate about technology, and we hope to share our passion with you through this project. If you have any questions, please feel free to reach out to us on LinkedIn.
 - [Aiden] | Software Engineer
 - [An] | Database Administrator
 - [Dien](https://www.linkedin.com/in/dien-mai-0067ba24b/) | Database Administrator
