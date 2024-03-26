@@ -70,10 +70,6 @@ npm run start
 - **Database**:
   - [Firebase](https://firebase.google.com/) - A platform developed by Google for creating mobile and web applications
 
-- **APIs**:
-  - [Google Maps API](https://developers.google.com/maps) - For displaying maps and handling geolocation
-
-
 ### Branching Policy
 #### Main Branches
 
