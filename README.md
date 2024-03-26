@@ -1,58 +1,31 @@
-# Welcome to Park Findr!
+# Park Findr
 
+Park Findr is the premiere parking assistance application for the University of Oklahoma community. It simplifies the process of finding a parking spot by providing real-time updates on available parking spaces across campus garages.
 
-## Features
+## Table of Contents
 
-**Real-time Parking Availability**  
-- Park Findr provides live updates on available parking spaces within the University of Oklahoma's parking garages, ensuring that you find a spot quickly and efficiently.
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installing](#installing)
+- [Running the tests](#running-the-tests)
+- [Deployment](#deployment)
+- [Built With](#built-with)
+- [Branching Policy](#branching-policy)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-**Garage and Floor Level Selection**  
-- Our intuitive interface allows users to select specific garages and floor levels to check for open parking spots.
+## Getting Started
 
-**User-Friendly Interface**  
-- Designed with ease of use in mind, our app enables users to navigate through the features without any hassle.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-**Integrated Map View**  
-- Locate the closest parking garage with available space with our integrated map view, which shows all the garages in relation to your current location.
+### Prerequisites
 
-**Sustainability Focus**  
-- By reducing the time spent searching for parking, we're helping to cut down on CO2 emissions, making Park Findr a friend to both users and the environment.
+What things you need to install the software and how to install them:
 
-**Community-Driven Updates**  
-- Contribute to the accuracy of parking availability with our community-driven update feature, where users can report parking status.
-
-**Accessibility Options**  
-- Accessibility is key, so we've included options for those with disabilities, ensuring parking is accessible to everyone.
-
-Remember, we're continually updating and improving Park Findr, so stay tuned for more exciting features!
-
-
-## Meet the Team
-Park Findr is a collaborative project by seven software engineers and database administrators. We are passionate about technology, and we hope to share our passion with you through this project. If you have any questions, please feel free to reach out to us on LinkedIn.
-- [Aiden] | Software Engineer
-- [An](https://www.linkedin.com/in/annguyen123/) | Database Administrator
-- [Dien](https://www.linkedin.com/in/dien-mai-0067ba24b/) | Database Administrator
-- [Hoc](https://www.linkedin.com/in/hoc-nguyen/) | Software Engineer
-- [Melissa](https://www.linkedin.com/in/melissa-ng-724736284) | Project Manager
-- [Tyler](https://www.linkedin.com/in/tyler-vuong/) | Software Engineer
-- [Vincent](https://www.linkedin.com/in/vincenttran-swe/) | Software Engineer
-
-## Tech Stack
-- X-Code
-- Visual Studio Code
-- Swift UI
-
-## Technologies
-- Python
-- React
-- Netlify
-- Vercel
-
-## Running the program
-1. Clone this repository to access the files. 
-2. Make sure you are in the general folder and that npm is installed ("npm i" in the terminal to install).
-3. Then use "npm run dev" to open up the application in your browser.
-
-## _License_
-
-You are allowed to use, copy, modify, and distribute the code freely.
+```bash
+Node.js
+Firebase Account
+Google Maps API Key
