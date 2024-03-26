@@ -49,4 +49,6 @@ Park Findr is a collaborative project by seven software engineers and database a
 - Vercel
 
 ## Running the program
-Clone this repository to access the files. Make sure you are in the general folder and that npm is installed ("npm i" in the terminal to install). The use "npm run dev" to open up the application in your browser.
+1. Clone this repository to access the files. 
+2. Make sure you are in the general folder and that npm is installed ("npm i" in the terminal to install).
+3. Then use "npm run dev" to open up the application in your browser.
