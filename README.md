@@ -122,6 +122,11 @@ Before your submission, please ensure:
 - XCode (Version: 15.3)
 - MacOS (Sonoma: 14.3.1)
 - Windows 11 (Build 22631.3296)
+- React()
+- Bootstrap()
+- Node.js()
+- Express()
+- Firebase()
 
 
 ### Authors
