@@ -41,3 +41,5 @@ Park Findr is a collaborative project by seven software engineers and database a
 - [Vincent](https://www.linkedin.com/in/vincenttran-swe/) | Software Engineer
 
 ## Tech Stack
+- X-Code
+- Visual Studio Code
