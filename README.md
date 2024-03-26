@@ -6,7 +6,6 @@ Park Findr is the premiere parking assistance application for the University of 
 
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [Running the tests](#running-the-tests)
 - [Deployment](#deployment)
 - [Built With](#built-with)
 - [Branching Policy](#branching-policy)
