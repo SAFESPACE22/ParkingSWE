@@ -44,3 +44,12 @@ Park Findr is a collaborative project by seven software engineers and database a
 - X-Code
 - Visual Studio Code
 - Swift UI
+
+## Technologies
+- Python
+- React
+- Netlify
+- Vercel
+
+## Running the program
+Clone this repository to access the files. Make sure you are in the general folder and that npm is installed ("npm i" in the terminal to install). The use "npm run dev" to open up the application in your browser.
