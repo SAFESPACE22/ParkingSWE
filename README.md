@@ -4,19 +4,19 @@
 ## Features
 
 **Real-time Parking Availability**  
-Park Findr provides live updates on available parking spaces within the University of Oklahoma's parking garages, ensuring that you find a spot quickly and efficiently.
+- Park Findr provides live updates on available parking spaces within the University of Oklahoma's parking garages, ensuring that you find a spot quickly and efficiently.
 
 **Garage and Floor Level Selection**  
-Our intuitive interface allows users to select specific garages and floor levels to check for open parking spots.
+- Our intuitive interface allows users to select specific garages and floor levels to check for open parking spots.
 
 **User-Friendly Interface**  
-Designed with ease of use in mind, our app enables users to navigate through the features without any hassle.
+- Designed with ease of use in mind, our app enables users to navigate through the features without any hassle.
 
 **Multi-Platform Support**  
-Whether you're on the go with your smartphone or planning ahead on your laptop, Park Findr works seamlessly across all devices.
+- Whether you're on the go with your smartphone or planning ahead on your laptop, Park Findr works seamlessly across all devices.
 
 **Integrated Map View**  
-Locate the closest parking garage with available space with our integrated map view, which shows all the garages in relation to your current location.
+- Locate the closest parking garage with available space with our integrated map view, which shows all the garages in relation to your current location.
 
 
 ## Meet the Team
