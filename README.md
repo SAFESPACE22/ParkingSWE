@@ -29,3 +29,32 @@ What things you need to install the software and how to install them:
 Node.js
 Firebase Account
 Google Maps API Key
+```
+### Installing
+A step-by-step series of examples that tell you how to get a development environment running:
+
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/parkfindr.git
+cd parkfindr
+```
+Install the dependencies:
+```bash
+npm install
+```
+Set up your environmental variables:
+```bash
+export GOOGLE_MAPS_API_KEY='your-google-maps-api-key'
+export FIREBASE_API_KEY='your-firebase-api-key'
+```
+
+Start the development server:
+```bash
+npm start
+```
+### Running the tests
+
+
+
+
+
