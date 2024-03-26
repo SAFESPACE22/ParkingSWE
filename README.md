@@ -12,9 +12,6 @@
 **User-Friendly Interface**  
 - Designed with ease of use in mind, our app enables users to navigate through the features without any hassle.
 
-**Multi-Platform Support**  
-- Whether you're on the go with your smartphone or planning ahead on your laptop, Park Findr works seamlessly across all devices.
-
 **Integrated Map View**  
 - Locate the closest parking garage with available space with our integrated map view, which shows all the garages in relation to your current location.
 
