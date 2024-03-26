@@ -6,7 +6,6 @@ Park Findr is the premiere parking assistance application for the University of 
 
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [Installing](#installing)
 - [Running the tests](#running-the-tests)
 - [Deployment](#deployment)
 - [Built With](#built-with)
@@ -30,30 +29,6 @@ Node.js
 Firebase Account
 Google Maps API Key
 ```
-### Installing
-A step-by-step series of examples that tell you how to get a development environment running:
-
-Clone the repository to your local machine:
-```bash
-git clone https://github.com/yourusername/parkfindr.git
-cd parkfindr
-```
-Install the dependencies:
-```bash
-npm install
-```
-Set up your environmental variables:
-```bash
-export GOOGLE_MAPS_API_KEY='your-google-maps-api-key'
-export FIREBASE_API_KEY='your-firebase-api-key'
-```
-
-Start the development server:
-```bash
-npm start
-```
-### Running the tests
-
 ### Deployment
 1. Clone the repository to your local machine:
 ```bash
@@ -72,13 +47,57 @@ npm install
 
 4. Configure settings:
 ```bash
+cp config.example.js config.js
 ```
 
+5. Start the application:
+```bash
+npm run start
+```
 
+6. Access the application in your web browser by opening up the localhost
 
 ### Built With
 
+- **Frontend**:
+  - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+  - [Bootstrap](https://getbootstrap.com/) - A front-end framework for developing responsive, mobile-first projects
+
+- **Backend**:
+  - [Node.js](https://nodejs.org/) - A JavaScript runtime built on Chrome's V8 JavaScript engine
+  - [Express](https://expressjs.com/) - A minimal and flexible Node.js web application framework
+
+- **Database**:
+  - [Firebase](https://firebase.google.com/) - A platform developed by Google for creating mobile and web applications
+
+- **APIs**:
+  - [Google Maps API](https://developers.google.com/maps) - For displaying maps and handling geolocation
+
+
 ### Branching Policy
+#### Main Branches
+
+- `master`: The `master` branch contains stable, production-ready code. It should always reflect the latest release.
+- `develop`: The `develop` branch is the main integration branch where feature branches are merged. It may contain work in progress and should be tested thoroughly before merging into `master`.
+
+#### Feature Branches
+
+- Feature branches should be created off the `develop` branch.
+- Use descriptive names for feature branches, e.g., `feature/new-feature` or `feature/issue-123`.
+- Once a feature is complete, submit a pull request to merge it into `develop`.
+
+#### Release Branches
+
+- When preparing for a release, create a release branch from `develop`.
+- Use the naming convention `release/x.x.x`, where `x.x.x` is the version number.
+- Perform final testing and bug fixes on the release branch.
+- Merge the release branch into both `master` and `develop` once it's ready.
+
+#### Pull Requests
+
+- All changes should be made via pull requests.
+- Pull requests must be reviewed by at least one other team member before merging.
+- Squash and merge feature branches to maintain a clean commit history.
 
 ### Contributing
 
@@ -97,18 +116,17 @@ Before your submission, please ensure:
 - You've added any necessary documentation for your changes.
 - You’ve followed code style and quality standards.
 
-By contributing, you agree that your contributions will be licensed under the project's MIT License.
-
-Happy coding!
 
 ### Versioning
 Visual Studio Code (Version: 1.87.2)
 XCode (Version: 15.3)
+MacOS (Sonoma: 14.3.1)
+Windows 11 (Build 22631.3296)
 
 
 ### Authors
 Park Findr is a collaborative project by seven software engineers and database administrators. We are passionate about technology, and we hope to share our passion with you through this project. If you have any questions, please feel free to reach out to us on LinkedIn.
-- [Aiden] | Software Engineer
+- [Aidan] | Software Engineer
 - [An](https://www.linkedin.com/in/annguyen123/) | Database Administrator
 - [Dien](https://www.linkedin.com/in/dien-mai-0067ba24b/) | Database Administrator
 - [Hoc](https://www.linkedin.com/in/hoc-nguyen/) | Software Engineer
@@ -117,7 +135,7 @@ Park Findr is a collaborative project by seven software engineers and database a
 - [Vincent](https://www.linkedin.com/in/vincenttran-swe/) | Software Engineer
 
 ### License
-This project is not licensed. You are allowed to use, copy, modify, and distribute the code freely.
+-This project is not licensed. You are allowed to use, copy, modify, and distribute the code freely.
 
 
 ### Acknowledgments
