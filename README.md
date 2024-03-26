@@ -52,3 +52,7 @@ Park Findr is a collaborative project by seven software engineers and database a
 1. Clone this repository to access the files. 
 2. Make sure you are in the general folder and that npm is installed ("npm i" in the terminal to install).
 3. Then use "npm run dev" to open up the application in your browser.
+
+## _License_
+
+You are allowed to use, copy, modify, and distribute the code freely.
