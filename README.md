@@ -118,10 +118,10 @@ Before your submission, please ensure:
 
 
 ### Versioning
-Visual Studio Code (Version: 1.87.2)
-XCode (Version: 15.3)
-MacOS (Sonoma: 14.3.1)
-Windows 11 (Build 22631.3296)
+- Visual Studio Code (Version: 1.87.2)
+- XCode (Version: 15.3)
+- MacOS (Sonoma: 14.3.1)
+- Windows 11 (Build 22631.3296)
 
 
 ### Authors
