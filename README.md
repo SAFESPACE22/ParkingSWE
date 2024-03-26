@@ -135,7 +135,7 @@ Park Findr is a collaborative project by seven software engineers and database a
 - [Vincent](https://www.linkedin.com/in/vincenttran-swe/) | Software Engineer
 
 ### License
--This project is not licensed. You are allowed to use, copy, modify, and distribute the code freely.
+This project is not licensed. You are allowed to use, copy, modify, and distribute the code freely.
 
 
 ### Acknowledgments
