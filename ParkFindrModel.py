@@ -63,38 +63,44 @@ Features:
 - is_weekend: whether it is a weekend on the day of the observation
 
 Targets:
-- number of vacant parking spots on the floor
-- number of vacant commuter parking spots on the floor
+- vacant_spots: number of vacant parking spots on the floor
+- commuter_vacant_spots: number of vacant commuter parking spots on the floor
+- pct_filled: % of parking spots filled on the floor
 """
 
+# Ticket: 1; Task: 1
 def load_data():
     data = pd.read_csv('parking_garage_data.csv')
     return data
 
+# Ticket: 1; Task: 2
 def shuffle_data(data):
     data = data.sample(frac=1, random_state=0).reset_index(drop=True)
     return data
 
 def separate_features_targets(data):
-    features = data.drop(['vacant_spots', 'commuter_vacant_spots'], axis=1)
-    targets = data[['vacant_spots', 'commuter_vacant_spots']]
+    features = data.drop(['vacant_spots', 'commuter_vacant_spots', 'pct_filled'], axis=1)
+    targets = data[['vacant_spots', 'commuter_vacant_spots', 'pct_filled']]
     return features, targets
 
+# Ticket: 1; Task: 3
 def normalize_data(features):
     scaler = StandardScaler()
     normalized_features = scaler.fit_transform(features)
     return normalized_features
 
+# Ticket: 1; Task: 4
 def split_data(features, targets):
     x_train, x_test, y_train, y_test = train_test_split(features, targets, test_size=0.2, random_state=0)
     return x_train, x_test, y_train, y_test
 
-
+# Ticket: 1; Task: 8
 def save_model(model, model_name):
     model_path = os.path.join('models', model_name)
     with open(model_path, 'wb') as file:
         pickle.dump(model, file)
 
+# Ticket: 1; Task: 9
 def plot_scatter(f1,f2,title,bound=20):
 
     '''
@@ -127,14 +133,15 @@ def plot_scatter(f1,f2,title,bound=20):
     ax.text(0.2,11.5,"RMSE: {}".format("{:.3f}".format(rmse)),size = 13)
     ax.text(0.2,11,"MAE: {}".format("{:.3f}".format(mae)),size = 13)
     ax.text(0.2,10.5,r"$r^2$: {}".format("{:.3f}".format(r2)),size = 13)
-    ax.set_xlabel("Reference next year % change ",size =15)
+    ax.set_xlabel("Reference % filled ",size =15)
     ax.set_yticks(np.arange(0, 13, 2))
     ax.xaxis.set_tick_params(labelsize=13)
     ax.yaxis.set_tick_params(labelsize=13)
     
-    ax.set_ylabel("Predicted next year % change ",size =15)
+    ax.set_ylabel("Predicted % filled ",size =15)
     plt.colorbar(sc,fraction=0.046, pad=0.04)
 
+# Ticket: 1; Task: 9
 def plot_group(y_train,y_test,y_pred_train,y_pred_test,save_name) -> None:
     '''
     A figure panel with training and testing data prediction
@@ -154,7 +161,7 @@ def plot_group(y_train,y_test,y_pred_train,y_pred_test,save_name) -> None:
     save_name = os.path.join('figures', save_name)
     plt.savefig(save_name,dpi=300)  
 
-
+# Ticket: 1; Task: 5
 def train_model(name, estimator, x_train, y_train, x_test, y_test) -> any:
     print("Creating", name, "model...")
     model = estimator.fit(x_train, np.ravel(y_train))
@@ -201,6 +208,7 @@ for name, estimator in estimators.items():
 params = {
 }
 
+# Ticket: 1; Task: 6
 # fine tune using bayesian optimization
 # return the best hyperparameters
 def fine_tune_model_hyperparameters(model, parameter_grid, x_train, y_train):
@@ -216,6 +224,10 @@ def fine_hyperparameters():
         save_model(model, model_name)
 
 
+# Ticket: 1; Task: 8
+def make_predictions(model, features):
+    predictions = model.predict(features)
+    return predictions
 
 # load the models
 def load_models():
