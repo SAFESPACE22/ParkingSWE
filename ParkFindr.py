@@ -28,7 +28,22 @@ api = Api(server)
 #     normalized_features = scaler.fit_transform(features)
 #     return normalized_features
 
+# task 4
 def predict_vacancy(config):
+    """
+    Predicts the vacancy based on the given configuration.
+
+    Parameters:
+    - config (dict or pandas.DataFrame): The configuration data for prediction.
+
+    Returns:
+    - int or dict: The predicted vacancy or an error message.
+
+    Raises:
+    - FileNotFoundError: If the model file is not found.
+    - ModuleNotFoundError: If a required module is not found.
+    - ValueError: If there is an error in the prediction process.
+    """
     ##loading the model from the saved file
     pkl_filename = "models/ridge"
     try:
@@ -47,7 +62,7 @@ def predict_vacancy(config):
             # If not, wrap them in a list
             for key in config:
                 if not isinstance(config[key], list) or isinstance(config[key], str):
-                    config[key] =    [config[key]]
+                    config[key] = [config[key]]
             df = pd.DataFrame(config)
         else:
             df = config
@@ -62,10 +77,32 @@ def predict_vacancy(config):
         return {"error": str(e)}
     
 class Test(Resource):
+    """
+    This class represents the Test resource.
+
+    Methods:
+    - get(): Returns a welcome message for the Test App API.
+    - post(): Processes a POST request and returns the posted values if valid.
+    """
+
     def get(self):
+        """
+        Returns a welcome message for the Test App API.
+
+        Returns:
+        - A string representing the welcome message.
+        """
         return 'Welcome to, Test App API!'
 
+    # Task 3
     def post(self):
+        """
+        Processes a POST request and returns the posted values if valid.
+
+        Returns:
+        - A dictionary containing the posted values if valid.
+        - An error message if the posted values are in an invalid format.
+        """
         try:
             value = request.get_json()
             if(value):
@@ -76,16 +113,37 @@ class Test(Resource):
         except Exception as error:
             return {'error': error}
 
+# Task 2
 class GetPredictionOutput(Resource):
+    """
+    Represents a resource for getting prediction output.
+
+    Methods:
+    - get: Handles GET requests and returns an error message.
+    - post: Handles POST requests, predicts vacancy based on input data, and returns the prediction output.
+    """
+
     def get(self):
-        return {"error":"Invalid Method."}
+        """
+        Handles GET requests and returns an error message.
+
+        Returns:
+        A dictionary with an error message.
+        """
+        return {"error": "Invalid Method."}
 
     def post(self):
+        """
+        Handles POST requests, predicts vacancy based on input data, and returns the prediction output.
+
+        Returns:
+        A dictionary with the prediction output.
+        """
         try:
             data = request.get_json()
             predict = predict_vacancy(data)
             predict_output = predict
-            return {'predict':predict_output}
+            return {'predict': predict_output}
 
         except Exception as error:
             return {'error': error}
