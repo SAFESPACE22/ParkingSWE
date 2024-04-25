@@ -1,69 +1,44 @@
-import csv
+import pandas as pd
+import numpy as np
 import time
-import random
 from datetime import datetime, timedelta
 
-# Define the path to your CSV file
-filename = "ParkingDataset.csv"
-fields = ['Parking Garage', 'Parking Slot', 'Availability', 'Day', 'Time']
+filename = "/Users/AnNguyen/Desktop/ParkFindr/ParkingSWE/CSVData/ParkingDataset.csv"
 
-def update_parking_availability(day, current_time, slot_id):
-    # Convert string time to datetime object
-    time_obj = datetime.strptime(current_time, '%H:%M')
+# Load the CSV file into a DataFrame
+df = pd.read_csv(filename)
 
-    # Use the parking slot ID to seed the random number generator for unique results per slot
-    random.seed(hash(slot_id))
-
-    # On weekends, increase the chance of finding open spots
+# Function to update availability based on the time of day and day of the week
+def update_availability(row, current_time):
+    hour = current_time.hour
+    day = current_time.strftime("%A")
+    # 0 = Empty Parking Slot
+    # 1 = Taken Parking Slot
     if day in ['Saturday', 'Sunday']:
-        # More likely to be open
-        return random.choices([0, 1], weights=[0.7, 0.3], k=1)[0]
-
-    # On weekdays from 8:00 to 15:00, greatly reduce the number of open spots
-    if time_obj.hour >= 8 and time_obj.hour < 15:
-        # Spot is likely taken, with a higher chance of being taken
-        return random.choices([0, 1], weights=[0.2, 0.8], k=1)[0]
+        return np.random.choice([0, 1], p=[0.8, 0.2])
+    elif 8 <= hour < 15:
+        return np.random.choice([0, 1], p=[0.3, 0.7])
     else:
-        # Outside of peak hours, randomly decide to open up some spots
-        return random.choices([0, 1], weights=[0.5, 0.5], k=1)[0]
+        return np.random.choice([0, 1], p=[0.8, 0.2])
 
-def read_and_update_csv():
-    # Read the existing data
-    with open(filename, 'r') as csvfile:
-        reader = csv.DictReader(csvfile)
-        rows = list(reader)
-
-    # Update time and availability
-    new_rows = []
-    for row in rows:
-        current_day = row['Day']
-        current_time = row['Time']
-        parking_slot = row['Parking Slot']
-        # Increment the time by one hour
-        time_obj = datetime.strptime(current_time, '%H:%M') + timedelta(hours=1)
-        new_time = time_obj.strftime('%H:%M')
-        # If it reaches midnight, increment the day
-        if new_time == '00:00':
-            weekday_index = (datetime.strptime(current_day, '%A') + timedelta(days=1)).weekday()
-            current_day = datetime.strptime(str(weekday_index), '%w').strftime('%A')
-        # Update availability based on the new time and day
-        new_availability = update_parking_availability(current_day, new_time, parking_slot)
-        row['Time'] = new_time
-        row['Day'] = current_day
-        row['Availability'] = new_availability
-        new_rows.append(row)
-
-    # Write the updated data back to the CSV
-    with open(filename, 'w', newline='') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=fields)
-        writer.writeheader()
-        writer.writerows(new_rows)
-
-def main():
+def simulate():
+    current_time = datetime.strptime(df['Time'].iloc[0] + " " + df['Day'].iloc[0], "%H:%M %A")
     while True:
-        read_and_update_csv()
-        print("Updated at:", datetime.now())
-        time.sleep(10)  # Update every 10 seconds
+        # Update time for all entries
+        current_time += timedelta(hours=1)
+        df['Time'] = current_time.strftime("%H:%M")
+        df['Day'] = current_time.strftime("%A")
 
-if __name__ == "__main__":
-    main()
+        # Update availability for each entry
+        df['Availability'] = df.apply(update_availability, args=(current_time,), axis=1)
+
+        # Save updated DataFrame back to CSV
+        df.to_csv(filename, index=False)
+
+        # Print updated DataFrame (optional)
+        print(df)
+
+        # Sleep for 10 seconds
+        time.sleep(10)
+
+simulate()
