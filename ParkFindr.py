@@ -95,6 +95,6 @@ api.add_resource(GetPredictionOutput,'/getPredictionOutput')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    server.run(host='0.0.0.0', port=port)
+    server.run(host='10.204.146.9', port=port)
 
 # in terminal run: python ParkFindr.py
