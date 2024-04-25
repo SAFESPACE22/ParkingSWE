@@ -286,7 +286,7 @@ estimators = {
 data = load_data()
 data = shuffle_data(data)
 features, targets = separate_features_targets(data)
-features = normalize_data(features)
+# features = normalize_data(features)
 x_train, x_test, y_train, y_test = split_data(features, targets)
 
 for name, estimator in estimators.items():
