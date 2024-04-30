@@ -17,10 +17,25 @@ struct Location_Details: View {
     var color2 = Color(.red)
     var color3 = Color(.yellow)
     
+    @State private var labelText: String = ""
+    
     @Binding var garageSelection: MKMapItem?
     @Binding var show:Bool
     
+    var floors: Int {
+        switch garageSelection?.name {
+        case "Elm Avenue Parking Facility":
+            return 5
+        case "Asp Avenue Parking Facility", "Jenkins Parking Garage":
+            return 6
+        default:
+            return 0
+        }
+    }
+    
     var body: some View {
+        NavigationView {
+            
         VStack {
             
             Capsule()
@@ -64,6 +79,7 @@ struct Location_Details: View {
                        )
                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                        .foregroundColor(.clear)
+                    
             }
             .offset(x: -80)
             .padding(10)
@@ -81,14 +97,79 @@ struct Location_Details: View {
                         .foregroundColor(.gray)
                         .offset(x: -95)
                         .padding(-13)
+                    
+                    if garageSelection?.placemark.name == "Asp Avenue Parking Facility" {
+                        NavigationLink(destination: ASPFloorView(), label: {
+                            Text("Floor 1")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                        
+                        NavigationLink(destination: ASPFloorView2(), label: {
+                            Text("Floor 2")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                        
+                        NavigationLink(destination: ASPFloorView3(), label: {
+                            Text("Floor 3")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                        
+                        NavigationLink(destination: ASPFloorView4(), label: {
+                            Text("Floor 4")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                        
+                        NavigationLink(destination: ASPFloorView5(), label: {
+                            Text("Floor 5")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                        
+                        NavigationLink(destination: ASPFloorView6(), label: {
+                            Text("Floor 6")
+                        })
+                        .padding(.bottom, 5)
+                        .foregroundColor(.gray)
+                            
+                        
+                    }
+                    
+                    if garageSelection?.placemark.name == "Elm Avenue Parking Facility" {
+                        ForEach(1..<floors + 1, id: \.self) { floor in
+                            NavigationLink(destination: ELMFloorView(), label: { Text("Floor \(floor)")
+                        })
+                            .padding(.bottom, 5)
+                            .foregroundColor(.gray)
+                            
+                        }
+                    }
+                    
+                    if garageSelection?.placemark.name == "Jenkins Parking Garage" {
+                        ForEach(1..<floors + 1, id: \.self) { floor in
+                            NavigationLink(destination: JenkinFloorView(), label: { Text("Floor \(floor)")
+                        })
+                            .padding(.bottom, 5)
+                            .foregroundColor(.gray)
+                        }
+                        
+                    }
+                
+
+                    }
                 }
             }
+            .background(Color.black.opacity(0.82))
+            .edgesIgnoringSafeArea(.all)
+            .cornerRadius(9)
         }
-        .background(Color.black.opacity(0.82))
-        .ignoresSafeArea()
-        .cornerRadius(12)
     }
 }
+
+
 
 #Preview {
     Location_Details(garageSelection: .constant(nil), show: .constant(false))

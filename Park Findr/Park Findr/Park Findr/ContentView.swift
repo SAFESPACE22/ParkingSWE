@@ -51,15 +51,16 @@ struct ContentView: View {
                 .onChange(of: garageSelection, { oldValue, newValue in
                     showDetails = newValue != nil
                 })
-                .sheet(isPresented: $showDetails, content: {
-                    Location_Details(garageSelection: $garageSelection, show: $showDetails)
-                        .presentationDetents([.height(370), .height(100), .height(800)])
-                        .presentationBackgroundInteraction(.enabled)
-                        .interactiveDismissDisabled(true)
-                        .presentationCornerRadius(12)
-                        .ignoresSafeArea()
-                })
-                .ignoresSafeArea()
+                    .sheet(isPresented: $showDetails, content: {
+                        Location_Details(garageSelection: $garageSelection, show: $showDetails)
+                            .presentationDetents([.fraction(0.50), .fraction(0.10), .fraction(0.99)])
+                            .presentationBackgroundInteraction(.enabled)
+                            .interactiveDismissDisabled(true)
+                            .presentationCornerRadius(9)
+                            .edgesIgnoringSafeArea(.all)
+                    })
+                .background(Color.black.opacity(0.82))
+                .edgesIgnoringSafeArea(.all)
                 .frame(width: 393, height: 500)
                 .cornerRadius(20)
             }

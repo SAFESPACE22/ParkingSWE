@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1525382BD837B50037C6B7 /* GarageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525372BD837B50037C6B7 /* GarageView.swift */; };
+		CE15253B2BD840B40037C6B7 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CE15253A2BD840B40037C6B7 /* SplineRuntime */; };
+		CE15253F2BDC0F1D0037C6B7 /* GarageView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */; };
+		CE1525412BDC0F2D0037C6B7 /* GarageView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */; };
 		CED3282A2B8D21B700DE3D46 /* Park_FindrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */; };
 		CED3282C2B8D21B700DE3D46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3282B2B8D21B700DE3D46 /* ContentView.swift */; };
 		CED3282E2B8D21B800DE3D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED3282D2B8D21B800DE3D46 /* Assets.xcassets */; };
@@ -15,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1525372BD837B50037C6B7 /* GarageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView.swift; sourceTree = "<group>"; };
+		CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView2.swift; sourceTree = "<group>"; };
+		CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView3.swift; sourceTree = "<group>"; };
 		CED328262B8D21B700DE3D46 /* Park Findr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Findr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park_FindrApp.swift; sourceTree = "<group>"; };
 		CED3282B2B8D21B700DE3D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE15253B2BD840B40037C6B7 /* SplineRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,9 @@
 			children = (
 				CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */,
 				CED3282B2B8D21B700DE3D46 /* ContentView.swift */,
+				CE1525372BD837B50037C6B7 /* GarageView.swift */,
+				CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */,
+				CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */,
 				CED3282D2B8D21B800DE3D46 /* Assets.xcassets */,
 				CED3282F2B8D21B800DE3D46 /* Preview Content */,
 			);
@@ -86,6 +97,9 @@
 			dependencies = (
 			);
 			name = "Park Findr";
+			packageProductDependencies = (
+				CE15253A2BD840B40037C6B7 /* SplineRuntime */,
+			);
 			productName = "Park Findr";
 			productReference = CED328262B8D21B700DE3D46 /* Park Findr.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = CED3281D2B8D21B700DE3D46;
+			packageReferences = (
+				CE1525392BD840B40037C6B7 /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			productRefGroup = CED328272B8D21B700DE3D46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED3282C2B8D21B700DE3D46 /* ContentView.swift in Sources */,
+				CE1525412BDC0F2D0037C6B7 /* GarageView3.swift in Sources */,
+				CE15253F2BDC0F1D0037C6B7 /* GarageView2.swift in Sources */,
+				CE1525382BD837B50037C6B7 /* GarageView.swift in Sources */,
 				CED3282A2B8D21B700DE3D46 /* Park_FindrApp.swift in Sources */,
 				CED3283C2BB2345700DE3D46 /* Location_Details.swift in Sources */,
 			);
@@ -346,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE1525392BD840B40037C6B7 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE15253A2BD840B40037C6B7 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE1525392BD840B40037C6B7 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED3281E2B8D21B700DE3D46 /* Project object */;
 }
