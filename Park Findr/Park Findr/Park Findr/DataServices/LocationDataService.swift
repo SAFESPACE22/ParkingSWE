@@ -32,7 +32,8 @@ class LocationDataService {
                     "Floor 4": [false, true, true, true, true, true],
                     "Floor 5": [false, true, true, true, true, true],
                     "Floor 6": [false, true, true, true, true, true]
-                ]
+                ],
+            maplink: "https://maps.app.goo.gl/ZVXb517CNvQ2q5DBA"
             ),
         
         Location(
@@ -55,7 +56,8 @@ class LocationDataService {
                 "Floor 3": [false, true, true, true, true, true],
                 "Floor 4": [false, true, true, true, true, true],
                 "Floor 5": [false, true, true, true, true, true]
-                ]
+                ],
+            maplink: "https://maps.app.goo.gl/KsiZsYd8qq7qunFm6"
             ),
         
         Location(
@@ -80,7 +82,8 @@ class LocationDataService {
                 "Floor 4": [false, true, true, true, true, true],
                 "Floor 5": [false, true, true, true, true, true],
                 "Floor 6": [false, true, true, true, true, true]
-                ]
+                ],
+            maplink: "https://maps.app.goo.gl/prtdMapadKYU6dLk8"
             ),
     ]
 
