@@ -148,7 +148,7 @@ def create_dataset():
     # Save DataFrame to CSV
     df.to_csv('parking_garage_dataset_sample.csv', index=False)
 
-# create_dataset()
+create_dataset()
 # exit()
 
 # Ticket: 22; Task: 1
