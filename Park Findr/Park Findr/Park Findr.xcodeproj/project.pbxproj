@@ -7,27 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1525382BD837B50037C6B7 /* GarageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525372BD837B50037C6B7 /* GarageView.swift */; };
 		CE15253B2BD840B40037C6B7 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CE15253A2BD840B40037C6B7 /* SplineRuntime */; };
-		CE15253F2BDC0F1D0037C6B7 /* GarageView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */; };
-		CE1525412BDC0F2D0037C6B7 /* GarageView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */; };
+		CE1525462BE24AC70037C6B7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525452BE24AC70037C6B7 /* Location.swift */; };
+		CE15254A2BE24C030037C6B7 /* LocationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525492BE24C030037C6B7 /* LocationDataService.swift */; };
+		CE15254C2BE24F3D0037C6B7 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15254B2BE24F3D0037C6B7 /* LocationView.swift */; };
+		CE15254E2BE252490037C6B7 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15254D2BE252490037C6B7 /* LocationViewModel.swift */; };
+		CE1525502BE25C990037C6B7 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15254F2BE25C990037C6B7 /* LocationListView.swift */; };
+		CE1525522BE264550037C6B7 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525512BE264550037C6B7 /* LocationPreviewView.swift */; };
+		CE1525542BE271E80037C6B7 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525532BE271E80037C6B7 /* LocationMapAnnotationView.swift */; };
+		CE1525562BE279200037C6B7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1525552BE279200037C6B7 /* LocationDetailView.swift */; };
 		CED3282A2B8D21B700DE3D46 /* Park_FindrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */; };
 		CED3282C2B8D21B700DE3D46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3282B2B8D21B700DE3D46 /* ContentView.swift */; };
 		CED3282E2B8D21B800DE3D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED3282D2B8D21B800DE3D46 /* Assets.xcassets */; };
 		CED328312B8D21B800DE3D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED328302B8D21B800DE3D46 /* Preview Assets.xcassets */; };
-		CED3283C2BB2345700DE3D46 /* Location_Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3283B2BB2345700DE3D46 /* Location_Details.swift */; };
+		CEEC47142BE2C86E0040B4D6 /* FloorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC47132BE2C86E0040B4D6 /* FloorView.swift */; };
+		CEEC47192BE35D380040B4D6 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC47182BE35D380040B4D6 /* PromiseKit */; };
+		CEEC471B2BE366380040B4D6 /* fake_parking_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = CEEC471A2BE366380040B4D6 /* fake_parking_data.csv */; };
+		CEEC471D2BE391890040B4D6 /* splashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC471C2BE391890040B4D6 /* splashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE1525372BD837B50037C6B7 /* GarageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView.swift; sourceTree = "<group>"; };
-		CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView2.swift; sourceTree = "<group>"; };
-		CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView3.swift; sourceTree = "<group>"; };
+		CE1525452BE24AC70037C6B7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CE1525492BE24C030037C6B7 /* LocationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataService.swift; sourceTree = "<group>"; };
+		CE15254B2BE24F3D0037C6B7 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		CE15254D2BE252490037C6B7 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		CE15254F2BE25C990037C6B7 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		CE1525512BE264550037C6B7 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		CE1525532BE271E80037C6B7 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		CE1525552BE279200037C6B7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CED328262B8D21B700DE3D46 /* Park Findr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Findr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park_FindrApp.swift; sourceTree = "<group>"; };
 		CED3282B2B8D21B700DE3D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CED3282D2B8D21B800DE3D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED328302B8D21B800DE3D46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CED3283B2BB2345700DE3D46 /* Location_Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_Details.swift; sourceTree = "<group>"; };
+		CEEC47132BE2C86E0040B4D6 /* FloorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorView.swift; sourceTree = "<group>"; };
+		CEEC471A2BE366380040B4D6 /* fake_parking_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fake_parking_data.csv; sourceTree = "<group>"; };
+		CEEC471C2BE391890040B4D6 /* splashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +51,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE15253B2BD840B40037C6B7 /* SplineRuntime in Frameworks */,
+				CEEC47192BE35D380040B4D6 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1525422BE24A740037C6B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE1525452BE24AC70037C6B7 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE1525432BE24A7D0037C6B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE15254B2BE24F3D0037C6B7 /* LocationView.swift */,
+				CE15254F2BE25C990037C6B7 /* LocationListView.swift */,
+				CE1525512BE264550037C6B7 /* LocationPreviewView.swift */,
+				CE1525532BE271E80037C6B7 /* LocationMapAnnotationView.swift */,
+				CE1525552BE279200037C6B7 /* LocationDetailView.swift */,
+				CEEC47132BE2C86E0040B4D6 /* FloorView.swift */,
+				CEEC471C2BE391890040B4D6 /* splashScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE1525442BE24A860037C6B7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE15254D2BE252490037C6B7 /* LocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE1525482BE24B410037C6B7 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				CE1525492BE24C030037C6B7 /* LocationDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 		CED3281D2B8D21B700DE3D46 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +117,12 @@
 			children = (
 				CED328292B8D21B700DE3D46 /* Park_FindrApp.swift */,
 				CED3282B2B8D21B700DE3D46 /* ContentView.swift */,
-				CE1525372BD837B50037C6B7 /* GarageView.swift */,
-				CE15253E2BDC0F1D0037C6B7 /* GarageView2.swift */,
-				CE1525402BDC0F2D0037C6B7 /* GarageView3.swift */,
+				CE1525482BE24B410037C6B7 /* DataServices */,
+				CE1525432BE24A7D0037C6B7 /* Views */,
+				CE1525442BE24A860037C6B7 /* ViewModels */,
+				CE1525422BE24A740037C6B7 /* Models */,
 				CED3282D2B8D21B800DE3D46 /* Assets.xcassets */,
+				CEEC471A2BE366380040B4D6 /* fake_parking_data.csv */,
 				CED3282F2B8D21B800DE3D46 /* Preview Content */,
 			);
 			path = "Park Findr";
@@ -76,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				CED328302B8D21B800DE3D46 /* Preview Assets.xcassets */,
-				CED3283B2BB2345700DE3D46 /* Location_Details.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -99,6 +154,7 @@
 			name = "Park Findr";
 			packageProductDependencies = (
 				CE15253A2BD840B40037C6B7 /* SplineRuntime */,
+				CEEC47182BE35D380040B4D6 /* PromiseKit */,
 			);
 			productName = "Park Findr";
 			productReference = CED328262B8D21B700DE3D46 /* Park Findr.app */;
@@ -130,6 +186,7 @@
 			mainGroup = CED3281D2B8D21B700DE3D46;
 			packageReferences = (
 				CE1525392BD840B40037C6B7 /* XCRemoteSwiftPackageReference "spline-ios" */,
+				CEEC47172BE35D380040B4D6 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = CED328272B8D21B700DE3D46 /* Products */;
 			projectDirPath = "";
@@ -146,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED328312B8D21B800DE3D46 /* Preview Assets.xcassets in Resources */,
+				CEEC471B2BE366380040B4D6 /* fake_parking_data.csv in Resources */,
 				CED3282E2B8D21B800DE3D46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,12 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE15254A2BE24C030037C6B7 /* LocationDataService.swift in Sources */,
 				CED3282C2B8D21B700DE3D46 /* ContentView.swift in Sources */,
-				CE1525412BDC0F2D0037C6B7 /* GarageView3.swift in Sources */,
-				CE15253F2BDC0F1D0037C6B7 /* GarageView2.swift in Sources */,
-				CE1525382BD837B50037C6B7 /* GarageView.swift in Sources */,
+				CE15254E2BE252490037C6B7 /* LocationViewModel.swift in Sources */,
+				CEEC471D2BE391890040B4D6 /* splashScreenView.swift in Sources */,
 				CED3282A2B8D21B700DE3D46 /* Park_FindrApp.swift in Sources */,
-				CED3283C2BB2345700DE3D46 /* Location_Details.swift in Sources */,
+				CEEC47142BE2C86E0040B4D6 /* FloorView.swift in Sources */,
+				CE1525542BE271E80037C6B7 /* LocationMapAnnotationView.swift in Sources */,
+				CE1525502BE25C990037C6B7 /* LocationListView.swift in Sources */,
+				CE1525562BE279200037C6B7 /* LocationDetailView.swift in Sources */,
+				CE15254C2BE24F3D0037C6B7 /* LocationView.swift in Sources */,
+				CE1525522BE264550037C6B7 /* LocationPreviewView.swift in Sources */,
+				CE1525462BE24AC70037C6B7 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +440,14 @@
 				kind = branch;
 			};
 		};
+		CEEC47172BE35D380040B4D6 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -383,6 +455,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE1525392BD840B40037C6B7 /* XCRemoteSwiftPackageReference "spline-ios" */;
 			productName = SplineRuntime;
+		};
+		CEEC47182BE35D380040B4D6 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC47172BE35D380040B4D6 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

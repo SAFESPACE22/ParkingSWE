@@ -1,6 +1,15 @@
 {
-  "originHash" : "6eb1cde575b8c25cfa95028542ad01c3c4d84a522c587d73be600a3bdd7ae1cc",
+  "originHash" : "5b46217c4fe312eb419e80491973d0af3f2dabe05a88c847b3127d86eab2bbaa",
   "pins" : [
+    {
+      "identity" : "promisekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/PromiseKit.git",
+      "state" : {
+        "revision" : "cb70b070cde06837cd10a1febdf6105c1a3bb348",
+        "version" : "8.1.1"
+      }
+    },
     {
       "identity" : "spline-ios",
       "kind" : "remoteSourceControl",

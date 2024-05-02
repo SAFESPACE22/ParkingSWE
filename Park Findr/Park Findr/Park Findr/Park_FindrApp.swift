@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Park_FindrApp: App {
+    
+    @StateObject private var vm = LocationViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            splashScreenView()
         }
     }
 }
