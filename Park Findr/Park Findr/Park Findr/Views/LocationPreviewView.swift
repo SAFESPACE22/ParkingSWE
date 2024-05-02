@@ -105,7 +105,7 @@ extension LocationPreviewView {
     
     private var urlButton: some View {
         Button(action: {
-            openURL(urlString: "https://www.apple.com")
+            openURL(urlString: "https://parkfindr-11e8c.web.app/")
         }) {
             Text("Survey")
             .foregroundColor(.white)
