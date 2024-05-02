@@ -32,9 +32,8 @@ class LocationDataService {
                     "Floor 4": [false, true, true, true, true, true],
                     "Floor 5": [false, true, true, true, true, true],
                     "Floor 6": [false, true, true, true, true, true]
-                ],
-            maplink: "https://maps.app.goo.gl/ZVXb517CNvQ2q5DBA"
-            ),
+                ]
+        ),
         
         Location(
             garageName: "Elm Avenue Parking Facility",
@@ -56,9 +55,8 @@ class LocationDataService {
                 "Floor 3": [false, true, true, true, true, true],
                 "Floor 4": [false, true, true, true, true, true],
                 "Floor 5": [false, true, true, true, true, true]
-                ],
-            maplink: "https://maps.app.goo.gl/KsiZsYd8qq7qunFm6"
-            ),
+                ]
+        ),
         
         Location(
             garageName: "Jenkins Parking Garage",
@@ -82,9 +80,8 @@ class LocationDataService {
                 "Floor 4": [false, true, true, true, true, true],
                 "Floor 5": [false, true, true, true, true, true],
                 "Floor 6": [false, true, true, true, true, true]
-                ],
-            maplink: "https://maps.app.goo.gl/prtdMapadKYU6dLk8"
-            ),
+                ]
+        ),
     ]
 
     
