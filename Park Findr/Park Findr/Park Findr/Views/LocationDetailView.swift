@@ -93,10 +93,6 @@ extension LocationDetailView {
         
         return ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: height, style: .continuous)
-                .frame(width: width, height: height)
-                .foregroundColor(Color.white.opacity(0.1))
-            
-            RoundedRectangle(cornerRadius: height, style: .continuous)
                 .frame(width: percent * multiplier, height: height)
                 .background(
                     percent <= 40
@@ -108,6 +104,14 @@ extension LocationDetailView {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .foregroundColor(.clear)
+            
+            RoundedRectangle(cornerRadius: height, style: .continuous)
+                .frame(width: width, height: height)
+                .foregroundColor(Color.white.opacity(0.1))
+                .overlay(
+                            RoundedRectangle(cornerRadius: height, style: .continuous)
+                                .stroke(Color.black, lineWidth: 2) // Add black outline
+                        )
             
         }
     }
