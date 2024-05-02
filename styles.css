@@ -1,267 +1,262 @@
+/* General styles for the body */
 body {
+    /* Set margins, padding, and border */
     margin: 40px 0 40px 0;
     padding: 0;
     border: none;
+    /* Remove outline */
     outline: none;
+    /* Set background image */
     background-image: url('./background.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
+    background-size: cover; /* Cover entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    /* Remove box shadow */
     box-shadow: none;
+    /* Set font family */
     font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-
+/* Styles for the main content area */
 main {
+    /* Set background color */
     background-color: white;
+    /* Set padding */
     padding: 10px 40px 40px 40px;
+    /* Display as block */
     display: block;
+    /* Align text to left */
     text-align: left;
+    /* Set maximum width */
     max-width: 500px;
+    /* Center content horizontally */
     margin: auto;
+    /* Add border radius */
     border-radius: 10px;
 }
 
+/* Styles for the header */
 header {
+    /* Center align text */
     text-align: center;
 }
 
+/* Styles for h1 elements */
 h1 {
+    /* Set font size */
     font-size: 40px;
+    /* Set text color */
     color: #191516;
+    /* Set font weight */
     font-weight: bold;
 }
 
+/* Styles for forms */
 form {
+    /* Display as flex column */
     display: flex;
     flex-direction: column;
+    /* Set font size */
     font-size: 22px;
 }
 
+/* Styles for input fields */
 #name, #email, #number, #dropdown {
+    /* Remove outline */
     outline: none;
+    /* Set width to 100% */
     width: 100%;
+    /* Set padding */
     padding: 7px;
+    /* Set font size */
     font-size: 16px;
+    /* Add border */
     border: 1px solid #dee2e6;
+    /* Add border radius */
     border-radius: 3px;
+    /* Set background color */
     background-color: white;
+    /* Include padding in box sizing */
     box-sizing: border-box;
 }
 
+/* Styles for dropdown and options */
 #dropdown, option {
+    /* Remove outline */
     outline: none;
 }
 
+/* Styles for select elements */
 select {
+    /* Set padding */
     padding: 7px;
 }
 
+/* Styles for textareas */
 textarea {
+    /* Display as block */
     display: block;
 }
 
+/* Styles for form groups */
 .form-group {
+    /* Set padding */
     padding: 8px 0;
+    /* Set margin bottom */
     margin-bottom: 2px;
 }
 
+/* Styles for labels within form groups */
 .form-group>label {
+    /* Set margin bottom */
     margin-bottom: 8px;
+    /* Set text color */
     color: #191516;
+    /* Display as block */
     display: block;
+    /* Set font weight */
     font-weight: 500;
 }
 
+/* Styles for checkboxes and radios */
 [type="checkbox"]+label>span, [type="radio"]+label {
+    /* Set font size */
     font-size: 16px;
 }
 
+/* Styles for checkboxes and radios */
 [type="checkbox"], [type="radio"] {
+    /* Set margin */
     margin: 0 8px 0 0;
+    /* Include padding and border in box sizing */
     box-sizing: border-box;
+    /* Set minimum width and height */
     min-width: 18px;
     min-height: 18px;
 }
 
-/*hide the original checkbox and radio button*/
-
+/* Hide the original checkbox and radio button */
 [type="checkbox"] , [type="radio"] {
+    /* Set opacity to 0 */
     opacity: 0;
+    /* Disable pointer events */
     pointer-events: none;
 }
 
-
+/* Styles for radio and checkbox groups */
 .radio-group, .checkbox-group {
+    /* Display as flex row */
     display: flex;
     flex-direction: row;
+    /* Set margin bottom */
     margin-bottom: 10px;
+    /* Set position to relative */
     position: relative;
 }
 
+/* Styles for radio labels */
 [type="radio"]+label {
+    /* Set margin */
     margin: 0 5px 0 0;
+    /* Set font size */
     font-size: 16px;
+    /* Set position to relative */
     position: relative;
+    /* Set cursor to pointer */
     cursor: pointer;
 }
 
+/* Styles for checkbox labels */
 [type="checkbox"]+label {
+    /* Set margin */
     margin: 0 5px 0 0;
+    /* Set font size */
     font-size: 16px;
+    /* Set position to relative */
     position: relative;
+    /* Set cursor to pointer */
     cursor: pointer;
 }
 
-/* this is the custom box for the checkbox*/
-
+/* Styles for custom checkbox */
 [type="checkbox"]+label::before {
+    /* Set content to empty string */
     content: '';
+    /* Set minimum width and height */
     min-width: 18px;
     min-height: 18px;
+    /* Set position to absolute */
     position: absolute;
+    /* Set left offset */
     left: -26px;
+    /* Set border radius */
     border-radius: 3px;
-    /* top: 5px; */
+    /* Set background color */
     background-color: #eee;
+    /* Add transition effect */
     transition: all 0.4s;
 }
+
+/* Styles for checkbox SVG */
 [type="checkbox"]+label svg {
+    /* Set position to absolute */
     position: absolute;
+    /* Set width */
     width: 28px;
+    /* Set left offset */
     left: -31px;
+    /* Set top offset */
     top: -5px;
 }
 
-/* this is the polyline for the checkmark svg */
-
+/* Styles for polyline in SVG */
 [type="checkbox"]+label svg polyline {
+    /* Set stroke color */
     stroke: white;
+    /* Set stroke width */
     stroke-width: 8;
+    /* Set fill to none */
     fill: none;
+    /* Set stroke dash array */
     stroke-dasharray: 70;
+    /* Set initial stroke dash offset */
     stroke-dashoffset: 70;
+    /* Add transition effect */
     transition: stroke-dashoffset 0.4s;
 }
 
-/* change the color of custom checkbox when the original checkbox is in checked state */
-
+/* Change background color of custom checkbox when checked */
 [type="checkbox"]:checked+label::before {
+    /* Change background color */
     background-color: #191516;
 }
 
-/* setting stroke-dashoffset to 0 will reveal the hidden checkmark */
-
+/* Reveal the hidden checkmark when checkbox is checked */
 [type="checkbox"]:checked+label svg polyline {
+    /* Set stroke dash offset to 0 */
     stroke-dashoffset: 0;
 }
 
+/* Styles for textareas */
 textarea {
+    /* Set width to 100% */
     width: 100%;
+    /* Include padding in box sizing */
     box-sizing: border-box;
+    /* Set height */
     height: 200px;
+    /* Disable resizing */
     resize: none;
+    /* Set padding */
     padding: 4px;
+    /* Set font size */
     font-size: 16px;
+    /* Add border */
     border: 1px solid #dee2e6;
 }
 
+/* Styles for buttons */
 button {
+    /* Set width to 100% */
     width: 100%;
-    display: block;
-    height: 40px;
-    background-color: #191516;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    box-sizing: border-box;
-}
-
-#description {
-    text-align: center;
-    font-style: italic;
-    margin-top: -10px;
-}
-
-/* custom circle for radio button*/
-[type="radio"]+label::before {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background-color: #eee;
-    left: -27px;
-    top: -1px;
-    width: 20px;
-    height: 20px;
-    transition: all 0.4s;
-}
-
-/* fill circle with inset shadow when it is selected*/
-[type="radio"]:checked+label::before {
-    box-shadow: inset 0 0 0 6px #191516;
-}
-
-
-@media (max-width: 540px) {
- main {
-        max-width: 380px;
-    }
-}
-@media (max-width: 460px) {
-    main {
-        max-width: 280px;
-    }
-    h1 {
-        font-size: 32px;
-    }
-    #description {
-        font-size: 15px;
-    }
-    form {
-        font-size: 18px;
-    }
-    #name, #email, #number, #dropdown, textarea {
-        font-size: 15px;
-    }
-    [type="radio"]+label, [type="checkbox"]+label>span {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 375px) {
- main {
-        max-width: 260px;
-        padding: 10px 30px 30px 40px;
-    }
-    h1 {
-        font-size: 28px;
-    }
-    #description {
-        font-size: 12px;
-    }
-    form {
-        font-size: 15px;
-    }
-    #name, #email, #number, #dropdown, textarea {
-        font-size: 12px;
-    }
-    [type="radio"]+label, [type="checkbox"]+label>span {
-        font-size: 12px;
-    }
-    button {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 320px) {
- main {
-        max-width: 220px;
-    }
-}
-
-@media (max-width: 280px) {
- main {
-        max-width: 180px;
-    }
-}
+    /* Display
