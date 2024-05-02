@@ -1,0 +1,58 @@
+html {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    height: 100%;
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+body {
+    justify-content: center;
+    margin-top: 12%;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+#content {
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 45px
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    width: 308px;
+    height: 30px;
+}
+
+.field {
+    width: 300px;
+    height: 25px;
+}
+
+#firstName {
+    width: 144px;
+}
+
+#lastName {
+    width: 144px;
+}
+
+.register {
+    height: 330px
+}
